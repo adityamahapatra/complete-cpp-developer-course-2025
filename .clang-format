@@ -1,0 +1,25 @@
+# K&R (Kernighan & Ritchie) style
+BasedOnStyle: LLVM
+
+# Indentation: 4 spaces
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# K&R signature: opening brace attached to the statement line
+BreakBeforeBraces: Attach
+SpaceBeforeElse: true
+
+# Control statements
+IndentCaseLabels: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortBlocksOnASingleLine: Empty
+ColumnLimit: 120
+
+# Alignment
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignTrailingComments: true
+PointerAlignment: Left
