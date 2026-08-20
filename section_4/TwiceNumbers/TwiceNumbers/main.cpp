@@ -1,18 +1,18 @@
-#include <iostream>
 #include <array>
+#include <iostream>
 using namespace std;
 
 int main() {
 
-	array<int, 10> myNums;
+    array<int, 10> myNums;
 
-	for (int i = 0; i < myNums.size(); i++) {
-		myNums[i] = i * 2;
-	}
+    for (std::size_t i = 0; i < myNums.size(); i++) {
+        myNums[i] = static_cast<int>(i * 2);
+    }
 
-	for (int element : myNums) {
-		cout << element << endl;
-	}
+    for (int element : myNums) {
+        cout << element << endl;
+    }
 
-	return 0;
+    return 0;
 }

@@ -4,25 +4,25 @@
 using namespace std;
 
 int main() {
-	const int ARR_SIZE = 5;
+    // const int ARR_SIZE = 5;  // unused while the array demo below is commented out
 
-	//unique_ptr<double> myDubPtr(new double);
-	unique_ptr<double> myDubPtr = make_unique<double>();
-	//auto myArray = make_unique<int[]>(ARR_SIZE);
+    // unique_ptr<double> myDubPtr(new double);
+    unique_ptr<double> myDubPtr = make_unique<double>();
+    // auto myArray = make_unique<int[]>(ARR_SIZE);
 
-	*myDubPtr = 3.14;
-	cout << "Pointer value: " << *myDubPtr << endl;
+    *myDubPtr = 3.14;
+    cout << "Pointer value: " << *myDubPtr << endl;
 
-	unique_ptr<double> otherPtr = move(myDubPtr);
-	cout << "otherPtr: " << *otherPtr << endl;
+    unique_ptr<double> otherPtr = move(myDubPtr);
+    cout << "otherPtr: " << *otherPtr << endl;
 
-	//for (int i = 0; i < ARR_SIZE; i++) {
-	//	myArray[i] = i * 2;
-	//}
+    // for (int i = 0; i < ARR_SIZE; i++) {
+    //	myArray[i] = i * 2;
+    // }
 
-	//for (int i = 0; i < ARR_SIZE; i++) {
-	//	cout << myArray[i] << endl;
-	//}
+    // for (int i = 0; i < ARR_SIZE; i++) {
+    //	cout << myArray[i] << endl;
+    // }
 
-	return 0;
+    return 0;
 }

@@ -3,24 +3,24 @@ using namespace std;
 
 int main() {
 
-	const int ARR_SIZE = 5;
-	int arrSize = 0;
+    // const int ARR_SIZE = 5;  // unused - array size comes from user input
+    int arrSize = 0;
 
-	cout << "Please enter an array size: ";
-	cin >> arrSize;
+    cout << "Please enter an array size: ";
+    cin >> arrSize;
 
-	int* myArray = new int[arrSize];
+    int* myArray = new int[arrSize];
 
-	for (int i = 0; i < arrSize; i++) {
-		myArray[i] = i * 2;
-	}
+    for (int i = 0; i < arrSize; i++) {
+        myArray[i] = i * 2;
+    }
 
-	for (int i = 0; i < arrSize; i++) {
-		cout << myArray[i] << endl;
-	}
+    for (int i = 0; i < arrSize; i++) {
+        cout << myArray[i] << endl;
+    }
 
-	delete[] myArray;
-	myArray = nullptr;
+    delete[] myArray;
+    myArray = nullptr;
 
-	return 0;
+    return 0;
 }
