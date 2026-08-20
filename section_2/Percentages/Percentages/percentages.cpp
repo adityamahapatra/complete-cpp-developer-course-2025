@@ -16,7 +16,7 @@ int main() {
         return 1;
     }
 
-    std::cout << "Please enter your location: " << std::endl;
+    fmt::println("Please enter your location: ");
     std::getline(std::cin, location);
 
     if (location.empty()) {
