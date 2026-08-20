@@ -1,0 +1,35 @@
+# Compiled executables (build output directory)
+bin/
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Compiled libraries
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# C++ precompiled headers
+*.gch
+*.pch
+
+# Core dumps
+core
+core.*
+
+# Editor/OS temp files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# NOTE: .vscode/ is intentionally NOT ignored since it holds shared build config
