@@ -8,11 +8,11 @@ int main() {
     std::string location;
     int initialScore;
 
-    std::cout << "Please enter your full name: " << std::endl;
+    fmt::println("Please enter your full name: ");
     std::getline(std::cin, fullName);
 
     if (fullName.empty()) {
-        std::cout << "Please provide a valid name." << std::endl;
+        fmt::println("Please provide a valid name.");
         return 1;
     }
 
@@ -20,22 +20,24 @@ int main() {
     std::getline(std::cin, location);
 
     if (location.empty()) {
-        std::cout << "Please provide a valid location." << std::endl;
+        fmt::println("Please provide a valid location.");
         return 1;
     }
 
-    std::cout << "Please enter an initial score: " << std::endl;
+    fmt::println("Please enter an initial score: ");
     std::cin >> initialScore;
 
     if (!std::cin) {
-        std::cout << "Please enter a valid score." << std::endl;
+        fmt::println("Please enter a valid score.");
         return 1;
     }
 
-    std::cout << "Hello, " << fullName << std::endl;
-    std::cout << "We heard you are from " << location << std::endl;
-    std::cout << "Your original score is " << initialScore << ", but with five points added, your score is "
-              << initialScore + 5 << std::endl;
+    fmt::println("Hello, {}.", fullName);
+    fmt::println("We heard you are from {}.", location);
+    fmt::println("Your original score is {}, but with five points added, your score is {}.", initialScore,
+                 initialScore + 5);
+
+    fmt::println("Note: This file uses the <fmt> library for output.");
 
     return 0;
 }
