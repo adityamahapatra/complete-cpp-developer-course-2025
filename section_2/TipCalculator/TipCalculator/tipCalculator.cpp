@@ -21,6 +21,7 @@ int main() {
     tipAmount = (billAmount * (tipPercentage / 100.0));
     totalAmount = billAmount + tipAmount;
 
+    fmt::println("You should tip ${:.2f}", tipAmount);
     fmt::println("The total amount is: ${:.2f}", totalAmount);
 
     return 0;
