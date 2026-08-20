@@ -1,6 +1,10 @@
 # Compiled executables (build output directory)
 bin/
 
+# CMake build directory and CMake Tools cache
+build/
+.cache/
+
 # Object files
 *.o
 *.obj
