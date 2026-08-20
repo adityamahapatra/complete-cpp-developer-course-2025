@@ -1,6 +1,20 @@
 {
   "tasks": [
     {
+      "label": "CMake: Build all",
+      "type": "shell",
+      "command": "cmake --build \"${workspaceFolder}/build\"",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "Builds every CMake target (binaries land in bin/)."
+    },
+    {
       "label": "Create bin directory",
       "type": "shell",
       "command": "mkdir -p \"${workspaceFolder}/bin\"",
